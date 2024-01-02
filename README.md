@@ -2,6 +2,18 @@
 ## Admission System Database
 A Python script implementing an admission system database using SQLite3. This script manages tables for students, courses, and enrollments, providing functionalities to add students and courses, enroll students in courses, and retrieve information.
 
+<div align="center">
+  <br>
+      <img src="https://github.com/RJohnPaul/Primebook/blob/32d007df82089df8271cd20568e4666f05dafa17/Banner_Prime.png" alt="Project Banner">
+  <br />
+</div>
+
+<div align="center">
+  <br>
+      <img src="https://github.com/RJohnPaul/Primebook/blob/32d007df82089df8271cd20568e4666f05dafa17/Banner_Prime.png" alt="Project Banner">
+  <br />
+</div>
+
  SQLite-based database management for an admission system. Tables for Students, Courses, and Enrollments with proper relationships.Methods to add students, add courses, enroll students in courses, and retrieve information.
 
 ## Installation
