@@ -4,7 +4,7 @@ A Python script implementing an admission system database using SQLite3. This sc
 
 <div align="center">
   <br>
-      <img src="https://github.com/RJohnPaul/Primebook/blob/32d007df82089df8271cd20568e4666f05dafa17/Banner_Prime.png" alt="Project Banner">
+      <img src="https://github.com/RJohnPaul/student-admission-management-system.py/blob/da7ee9c07bac2d31707f0f7b773a9d254a04bf2b/Banner_PY.png" alt="Project Banner">
   <br />
 </div>
 
