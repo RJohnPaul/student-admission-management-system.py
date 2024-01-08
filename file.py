@@ -1,14 +1,15 @@
 import sqlite3
-import random
 from datetime import datetime
 
 class AdmissionSystem:
     def __init__(self, db_name='admission_system.db'):
+        """Initialize the Admission System with a SQLite database."""
         self.conn = sqlite3.connect(db_name)
         self.cursor = self.conn.cursor()
         self.create_tables()
 
     def create_tables(self):
+        """Create necessary tables if they don't exist."""
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS Students (
                 student_id INTEGER PRIMARY KEY,
@@ -38,6 +39,7 @@ class AdmissionSystem:
         self.conn.commit()
 
     def add_student(self, first_name, last_name, age, gender):
+        """Add a new student to the system."""
         admission_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         self.cursor.execute('''
             INSERT INTO Students (first_name, last_name, age, gender, admission_date)
@@ -46,6 +48,7 @@ class AdmissionSystem:
         self.conn.commit()
 
     def add_course(self, course_name):
+        """Add a new course to the system."""
         self.cursor.execute('''
             INSERT INTO Courses (course_name)
             VALUES (?)
@@ -53,6 +56,7 @@ class AdmissionSystem:
         self.conn.commit()
 
     def enroll_student(self, student_id, course_id):
+        """Enroll a student in a course."""
         enrollment_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         self.cursor.execute('''
             INSERT INTO Enrollments (student_id, course_id, enrollment_date)
@@ -61,14 +65,17 @@ class AdmissionSystem:
         self.conn.commit()
 
     def get_all_students(self):
+        """Retrieve information about all students."""
         self.cursor.execute('SELECT * FROM Students')
         return self.cursor.fetchall()
 
     def get_all_courses(self):
+        """Retrieve information about all courses."""
         self.cursor.execute('SELECT * FROM Courses')
         return self.cursor.fetchall()
 
     def get_student_enrollments(self, student_id):
+        """Retrieve a student's enrollments."""
         self.cursor.execute('''
             SELECT Courses.course_name, Enrollments.enrollment_date
             FROM Courses
@@ -78,6 +85,7 @@ class AdmissionSystem:
         return self.cursor.fetchall()
 
     def close_connection(self):
+        """Close the database connection."""
         self.conn.close()
 
 # Example Usage
