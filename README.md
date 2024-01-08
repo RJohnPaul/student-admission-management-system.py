@@ -16,7 +16,7 @@
 <br/>
 A Python script showcasing an admission system database using sqllite3. This script manages tables for students, courses, and enrollments, providing functionalities to add students and courses, enroll students in courses, and retrieve information.
 
- SQLite-based database management for an admission system. Tables for Students, Courses, and Enrollments with proper relationships.Methods  to further add students, add courses, enroll students in courses, and retrieve information.
+ SQLite database management for an admission system. Tables for Students, Courses, and Enrollments with proper relationships.Methods  to further add students, add courses, enroll students in courses, and retrieve information.
 
 ## Installation
 -Clone the repository:
@@ -30,14 +30,14 @@ Copy code
 pip install -r README.md
      ```
 ## Usage
--Import the AdmissionSystem class into your Python script or interactive environment.
--Create an instance of AdmissionSystem.
--Use the available methods to 'interact' with the admission system database.
+-Import the AdmissionSystem class into your Python script or Respecive env.
+-Create a instance of AdmissionSystem.
+-Use available methods to 'interact' with the admission system database.
 ## Documentation
 [Python Official Website](https://www.python.org/) : Learn more about the Python programming language.
 [SQLite Official Website](https://www.sqlite.org/index.html) : Explore SQLite, a C library that provides a lightweight disk-based database.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the 'LICENSE' file for details.
 
  Feel free to adapt and use this script for your admission system needs! If you encounter any issues or have suggestions for improvement, please open an issue.
